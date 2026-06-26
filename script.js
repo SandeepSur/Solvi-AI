@@ -392,39 +392,104 @@ document.addEventListener('DOMContentLoaded', () => {
                 { y: 0, opacity: 1, duration: 0.6 }
             ); // Removed delay to make it pop smoother
 
-            // Modal Logic
-            const modal = document.getElementById('svModal');
-            const closeBtn = document.getElementById('svModalClose');
-            const cards = document.querySelectorAll('.sv-card');
-            const modalContent = document.querySelector('.sv-modal-content');
+            // --- Advanced Video Player Modal Logic ---
+            const playerModal = document.getElementById('svPlayerModal');
+            const playerClose = document.getElementById('svPlayerClose');
+            const iframeWrapper = document.getElementById('svPlayerIframeWrapper');
+            const playerPrev = document.getElementById('svPlayerPrev');
+            const playerNext = document.getElementById('svPlayerNext');
+            const playerDotsContainer = document.getElementById('svPlayerDots');
+            const playerCurrent = document.getElementById('svPlayerCurrent');
+            const playerSpeciality = document.querySelector('.sv-player-speciality');
+            const playerTopic = document.querySelector('.sv-player-topic');
+            const playerContainer = document.querySelector('.sv-player-container');
+            
+            const allCards = document.querySelectorAll('.sv-card');
+            const uniqueCards = Array.from(allCards).slice(0, 6);
+            let currentIndex = 0;
 
-            cards.forEach(card => {
-                card.addEventListener('click', () => {
-                    if (modal && modalContent) {
-                        const videoId = card.getAttribute('data-video-id');
-                        if (videoId) {
-                            modalContent.innerHTML = `<iframe width="340px" height="600px" style="border:0; border-radius: 12px;" src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&controls=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-                        }
-                        modal.classList.add('active');
+            if (playerModal && iframeWrapper) {
+                // Initialize dots
+                uniqueCards.forEach((_, index) => {
+                    const dot = document.createElement('button');
+                    dot.className = 'sv-player-dot-btn';
+                    dot.addEventListener('click', () => loadVideo(index));
+                    playerDotsContainer.appendChild(dot);
+                });
+                const dots = document.querySelectorAll('.sv-player-dot-btn');
+
+                function loadVideo(index) {
+                    currentIndex = index;
+                    const card = uniqueCards[index];
+                    const videoId = card.getAttribute('data-video-id');
+                    const speciality = card.querySelector('.sv-speciality').innerText;
+                    const topic = card.querySelector('.sv-topic').innerText;
+
+                    // Update UI
+                    playerSpeciality.innerText = speciality;
+                    playerTopic.innerText = topic;
+                    playerCurrent.innerText = index + 1;
+                    
+                    dots.forEach((dot, i) => {
+                        if (i === index) dot.classList.add('active');
+                        else dot.classList.remove('active');
+                    });
+
+                    // Load iframe
+                    iframeWrapper.innerHTML = `<iframe width="100%" height="100%" style="border:0;" src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&controls=1&showinfo=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+                }
+
+                function openModal(index) {
+                    loadVideo(index);
+                    playerModal.classList.add('active');
+                    
+                    // GSAP Open Animation
+                    gsap.fromTo(playerContainer, 
+                        { scale: 0.90, opacity: 0 },
+                        { scale: 1, opacity: 1, duration: 0.4, ease: "back.out(1.2)" }
+                    );
+                }
+
+                function closePlayerModal() {
+                    playerModal.classList.remove('active');
+                    setTimeout(() => {
+                        iframeWrapper.innerHTML = '';
+                    }, 300);
+                }
+
+                // Click events on cards
+                allCards.forEach((card, i) => {
+                    card.addEventListener('click', () => {
+                        openModal(i % 6);
+                    });
+                });
+
+                // Navigation
+                playerPrev.addEventListener('click', () => {
+                    const newIndex = currentIndex === 0 ? 5 : currentIndex - 1;
+                    loadVideo(newIndex);
+                });
+
+                playerNext.addEventListener('click', () => {
+                    const newIndex = currentIndex === 5 ? 0 : currentIndex + 1;
+                    loadVideo(newIndex);
+                });
+
+                playerClose.addEventListener('click', closePlayerModal);
+
+                playerModal.addEventListener('click', (e) => {
+                    if (e.target === playerModal || e.target.classList.contains('sv-player-body')) {
+                        closePlayerModal();
                     }
                 });
-            });
 
-            function closeSvModal() {
-                if (modal) {
-                    modal.classList.remove('active');
-                    if (modalContent) {
-                        modalContent.innerHTML = '';
-                    }
-                }
-            }
-
-            if (closeBtn && modal) {
-                closeBtn.addEventListener('click', closeSvModal);
-                modal.addEventListener('click', (e) => {
-                    if (e.target === modal) {
-                        closeSvModal();
-                    }
+                // Keyboard Nav
+                document.addEventListener('keydown', (e) => {
+                    if (!playerModal.classList.contains('active')) return;
+                    
+                    if (e.key === 'Escape') closePlayerModal();
+                    if (e.key === 'ArrowLeft') playerPrev.click();
+                    if (e.key === 'ArrowRight') playerNext.click();
                 });
             }
         }
