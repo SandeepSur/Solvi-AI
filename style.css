@@ -3180,19 +3180,33 @@ a {
 }
 
 /* --- Logo Updates --- */
+.nav-logo-container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 0 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    overflow: hidden;
+}
 .nav-logo-img {
-    width: 160px;
-    height: 60px;
-    object-fit: contain;
+    width: 150px;
+    height: auto;
     display: block;
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.15));
+    filter: none;
     max-width: none;
     max-height: none;
 }
 @media (max-width: 768px) {
+    .nav-logo-container {
+        height: 40px;
+        padding: 0 12px;
+        border-radius: 16px;
+    }
     .nav-logo-img {
-        width: 120px;
-        height: 45px;
+        width: 110px;
+        height: auto;
     }
 }
 .footer-logo-container {
