@@ -401,9 +401,9 @@ document.addEventListener('DOMContentLoaded', () => {
             cards.forEach(card => {
                 card.addEventListener('click', () => {
                     if (modal && modalContent) {
-                        const videoSrc = card.getAttribute('data-video-src');
-                        if (videoSrc) {
-                            modalContent.innerHTML = `<video width="340px" height="600px" style="object-fit: contain; border-radius: 12px;" src="${videoSrc}" controls autoplay></video>`;
+                        const videoId = card.getAttribute('data-video-id');
+                        if (videoId) {
+                            modalContent.innerHTML = `<iframe width="340px" height="600px" style="border:0; border-radius: 12px;" src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&controls=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
                         }
                         modal.classList.add('active');
                     }
