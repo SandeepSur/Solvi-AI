@@ -3178,3 +3178,23 @@ a {
         aspect-ratio: 9/16;
     }
 }
+
+/* --- Logo Updates --- */
+.nav-logo-img {
+    height: 36px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+@media (max-width: 768px) {
+    .nav-logo-img {
+        height: 30px;
+    }
+}
+.footer-logo-img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 24px auto;
+}
