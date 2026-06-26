@@ -538,7 +538,7 @@ a {
 
 /* --- How It Works Section --- */
 .how-it-works {
-    background-color: #020414;
+    background: linear-gradient(to bottom, #000000 0%, #020420 25%, #050530 50%, #020420 75%, #000000 100%);
     padding: 100px 24px;
     color: #fff;
     position: relative;
@@ -594,7 +594,7 @@ a {
 }
 
 .hiw-cards-container {
-    background: rgba(8, 8, 25, 0.60);
+    background: rgba(5, 5, 40, 0.70);
     border: 1px solid rgba(255,255,255,0.08);
     border-radius: 20px;
     padding: 2px;
@@ -861,7 +861,7 @@ a {
 
 /* --- Our Process Section --- */
 .our-process {
-    background: linear-gradient(to bottom, #000000 0%, #020420 50%, #000000 100%);
+    background: linear-gradient(to bottom, #000000 0%, #020420 25%, #050530 50%, #020420 75%, #000000 100%);
     padding: 120px 24px;
     color: #fff;
     overflow: hidden;
@@ -959,8 +959,8 @@ a {
     flex: 0 0 auto;
     width: 380px;
     scroll-snap-align: start;
-    background: linear-gradient(to bottom, #07071a, #0d0d2b);
-    border: 1px solid rgba(99, 102, 241, 0.15);
+    background: linear-gradient(to bottom, #07071a 0%, #0d0d2e 100%);
+    border: 1px solid rgba(99, 102, 241, 0.20);
     border-radius: 24px;
     padding: 36px;
     padding-top: 50px;
@@ -1079,7 +1079,7 @@ a {
 
 /* --- Why Choose Us Section --- */
 .why-choose-us {
-    background: linear-gradient(to bottom, #000000 0%, #020420 50%, #000000 100%);
+    background: linear-gradient(to bottom, #000000 0%, #020420 25%, #050530 50%, #020420 75%, #000000 100%);
     padding: 120px 24px;
     color: #fff;
     position: relative;
@@ -1118,8 +1118,8 @@ a {
 }
 
 .wcu-card {
-    background: linear-gradient(to bottom, #07071a, #0d0d2b);
-    border: 1px solid rgba(99, 102, 241, 0.15);
+    background: linear-gradient(to bottom, #07071a 0%, #0d0d2e 100%);
+    border: 1px solid rgba(99, 102, 241, 0.20);
     border-radius: 24px;
     padding: 36px;
     overflow: hidden;
@@ -1265,7 +1265,7 @@ a {
 .wcu-shield {
     width: 80px;
     height: 100px;
-    background: linear-gradient(to bottom, #0a0a2e, #1a1a4e);
+    background: linear-gradient(to bottom, #050530, #1a1a4e);
     border: 1.5px solid rgba(99, 102, 241, 0.40);
     border-radius: 12px 12px 40px 40px;
     box-shadow: 0 0 40px rgba(99, 102, 241, 0.30);
@@ -1431,7 +1431,7 @@ a {
     position: absolute;
     top: 1.5px; left: 1.5px; right: 1.5px; bottom: 1.5px;
     border-radius: 10.5px 10.5px 38.5px 38.5px;
-    background: linear-gradient(to bottom, #0a0a2e, #1a1a4e);
+    background: linear-gradient(to bottom, #050530, #1a1a4e);
     z-index: 1;
 }
 .wcu-shield svg {
@@ -1532,8 +1532,8 @@ a {
 }
 
 .bento-card {
-    background: linear-gradient(to bottom, #07071a, #0d0d2b);
-    border: 1px solid rgba(99, 102, 241, 0.15);
+    background: linear-gradient(to bottom, #07071a 0%, #0d0d2e 100%);
+    border: 1px solid rgba(99, 102, 241, 0.20);
     border-radius: 24px;
     padding: 32px;
     min-height: 280px;
@@ -1863,7 +1863,7 @@ a {
 .r-dot {
     width: 18px;
     height: 18px;
-    background: #0d0d2b;
+    background: linear-gradient(to bottom, #07071a 0%, #0d0d2e 100%);
     border: 2px solid rgba(124, 58, 237, 0.4);
     border-radius: 50%;
     animation: dotPulse 3s infinite;
@@ -1875,7 +1875,7 @@ a {
 .r-dot-4 { animation-delay: 2.7s; }
 
 @keyframes dotPulse {
-    0%, 20%, 100% { background: #0d0d2b; border-color: rgba(124, 58, 237, 0.4); box-shadow: none; }
+    0%, 20%, 100% { background: linear-gradient(to bottom, #07071a 0%, #0d0d2e 100%); border-color: rgba(124, 58, 237, 0.4); box-shadow: none; }
     10% { background: #7c3aed; border-color: #7c3aed; box-shadow: 0 0 12px #7c3aed; }
 }
 
@@ -1905,7 +1905,7 @@ a {
 
 /* --- What You Get Section (Center Diagram) --- */
 .what-you-get {
-    background: linear-gradient(to bottom, #000000 0%, #020420 50%, #000000 100%);
+    background: linear-gradient(to bottom, #000000 0%, #020420 25%, #050530 50%, #020420 75%, #000000 100%);
     padding: 120px 24px;
     color: #fff;
     position: relative;
@@ -1994,7 +1994,7 @@ a {
     transform: translate(-50%, -50%);
     width: 160px;
     height: 160px;
-    background: linear-gradient(135deg, #0a0a2e, #1a1a4e);
+    background: linear-gradient(135deg, #050530, #1a1a4e);
     border-radius: 28px;
     z-index: 2;
     display: flex;
@@ -2018,7 +2018,7 @@ a {
     content: "";
     position: absolute;
     top: 1.5px; left: 1.5px; right: 1.5px; bottom: 1.5px;
-    background: linear-gradient(135deg, #0a0a2e, #1a1a4e);
+    background: linear-gradient(135deg, #050530, #1a1a4e);
     border-radius: 26.5px;
     z-index: 1;
 }
@@ -2056,8 +2056,8 @@ a {
 .wyg-card {
     width: 280px;
     min-height: 160px;
-    background: linear-gradient(to bottom, #07071a, #0d0d2b);
-    border: 1px solid rgba(99, 102, 241, 0.15);
+    background: linear-gradient(to bottom, #07071a 0%, #0d0d2e 100%);
+    border: 1px solid rgba(99, 102, 241, 0.20);
     border-radius: 20px;
     padding: 24px;
     position: absolute;
@@ -2208,7 +2208,7 @@ a {
 
 /* --- FAQ Section --- */
 .faq-section {
-    background: linear-gradient(to bottom, #000000 0%, #020420 50%, #000000 100%);
+    background: linear-gradient(to bottom, #000000 0%, #020420 25%, #050530 50%, #020420 75%, #000000 100%);
     padding: 120px 24px;
     color: #fff;
     position: relative;
@@ -2254,8 +2254,8 @@ a {
 }
 
 .faq-item {
-    background: rgba(8, 8, 30, 0.80);
-    border: 1px solid rgba(99, 102, 241, 0.15);
+    background: linear-gradient(to bottom, #07071a 0%, #0d0d2e 100%);
+    border: 1px solid rgba(99, 102, 241, 0.20);
     border-radius: 20px;
     padding: 28px 32px;
     cursor: pointer;
@@ -2362,7 +2362,7 @@ a {
 .final-cta-container {
     max-width: 1200px;
     margin: 0 auto;
-    background: linear-gradient(135deg, #0a0010 0%, #1a0a2e 50%, #0d0520 100%);
+    background: linear-gradient(135deg, #000000 0%, #050530 50%, #000000 100%);
     border-radius: 28px;
     padding: 100px 24px;
     position: relative;
@@ -2522,7 +2522,7 @@ a {
 .site-footer {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to bottom, #000000 0%, #020420 25%, #0a0a3e 50%, #020420 75%, #000000 100%);
+    background: linear-gradient(to bottom, #000000 0%, #020318 50%, #000000 100%);
     padding: 80px 24px 40px;
     display: flex;
     justify-content: center;
@@ -2635,7 +2635,7 @@ a {
 .footer-divider {
     width: 100%;
     height: 1px;
-    background: rgba(99, 102, 241, 0.15);
+    background: rgba(99, 102, 241, 0.20);
     margin: 48px 0 24px;
 }
 
@@ -2725,7 +2725,7 @@ a {
 
 /* --- Sample Videos Section --- */
 .sample-videos-section {
-    background-color: #020414;
+    background: linear-gradient(to bottom, #000000 0%, #020420 25%, #050530 50%, #020420 75%, #000000 100%);
     padding: 100px 0;
     position: relative;
     overflow: hidden;
@@ -2807,12 +2807,12 @@ a {
 
 .sv-fade-left {
     left: 0;
-    background: linear-gradient(to right, #020414 0%, transparent 100%);
+    background: linear-gradient(to right, #000510 0%, transparent 100%);
 }
 
 .sv-fade-right {
     right: 0;
-    background: linear-gradient(to left, #020414 0%, transparent 100%);
+    background: linear-gradient(to left, #000510 0%, transparent 100%);
 }
 
 .sv-strip-track {
@@ -2970,7 +2970,7 @@ a {
 
 /* YouTube Oversized Embed Styles */
 .sv-card {
-    background: #07071a !important;
+    background: linear-gradient(to bottom, #07071a 0%, #0d0d2e 100%); /* !important */
 }
 .sv-yt-iframe {
     position: absolute;
