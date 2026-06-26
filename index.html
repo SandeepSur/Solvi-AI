@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solve AI - Personal Branding for Doctors</title>
+    <meta name="description" content="AI Personal Branding Agency for healthcare professionals. We turn your medical expertise into a powerful personal brand.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- GSAP loaded via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon"></span>
+                Solve AI
+            </div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#results">Results</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+                <a href="#demo" class="btn-demo">Book Free Demo</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <div class="mobile-nav-links">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#results">Results</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+            <a href="#demo" class="btn-demo">Book Free Demo</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video class="hero-video" autoplay loop muted playsinline>
+            <source src="https://res.cloudinary.com/dj8mx39hb/video/upload/v1782379251/Doctors_AI_Tunnel_lkxzh3.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="badge">
+                ✦ AI Personal Branding Agency — Built for Doctors
+            </div>
+            <h1 class="headline">From Unknown Clinic to Trusted Authority.</h1>
+            <p class="subheadline">We turn your medical expertise into a powerful personal brand — AI videos, content strategy, and social media management. All done for you, every single month.</p>
+            <div class="hero-buttons">
+                <a href="#build" class="btn-primary">Build My Authority Online.</a>
+                <a href="#results" class="btn-secondary">See Real Doctor Results &rarr;</a>
+            </div>
+            <div class="social-proof">
+                <span class="stars">★★★★★</span> 50+ healthcare professionals growing on social — on autopilot.
+            </div>
+        </div>
+    </section>
+
+    <!-- Is This You Section -->
+    <section id="is-this-you-scroll-section" class="sticky-problems-section select-none">
+        <div class="sticky-problems-inner">
+            <!-- Background Aesthetics -->
+            <div class="bg-aesthetics z-0">
+                <div class="bg-gradient"></div>
+                <div class="bg-grid"></div>
+                <canvas id="particles-canvas" class="particles"></canvas>
+            </div>
+            <div class="glow-purple z-0"></div>
+            <div class="glow-blue z-0"></div>
+
+            <!-- Headline -->
+            <h2 class="responsive-heading select-none z-5">
+                <span class="text-white">IS THIS</span><span class="gradient-text">YOU?</span>
+            </h2>
+
+            <!-- Cards -->
+            <div class="problem-card compact-card select-none">
+                I don't have time to create content between patients
+            </div>
+            <div class="problem-card compact-card select-none">
+                I feel awkward and uncomfortable on camera
+            </div>
+            <div class="problem-card compact-card select-none">
+                I don't know what to post or how to write medical content
+            </div>
+            <div class="problem-card compact-card select-none">
+                I want to become the go-to doctor in my city on social media
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="hiw-container">
+            <div class="hiw-header">
+                <h2 class="hiw-title">From One Recording to Infinite Content</h2>
+                <a href="#" class="hiw-btn">
+                    See How It Works
+                    <span class="hiw-btn-icon">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </span>
+                </a>
+            </div>
+
+            <div class="hiw-cards-container">
+                <!-- Card 1 -->
+                <div class="hiw-card">
+                    <h3 class="hiw-card-title">Record Once</h3>
+                    <p class="hiw-card-desc">Book a 15-minute onboarding call. We record your face and voice — that's it. You never sit in front of a camera again.</p>
+                    <div class="hiw-card-visual">
+                        <div class="hiw-recording-pulse">
+                            <div class="hiw-mic-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
+                            </div>
+                        </div>
+                        <div class="hiw-waveforms">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="hiw-card">
+                    <h3 class="hiw-card-title">We Build Everything</h3>
+                    <p class="hiw-card-desc">Our team writes your scripts, produces your AI avatar videos, designs carousels and manages your entire content calendar every month.</p>
+                    <div class="hiw-card-visual hiw-visual-bars">
+                        <div class="hiw-progress-row">
+                            <div class="hiw-progress-label">Scripts</div>
+                            <div class="hiw-progress-track">
+                                <div class="hiw-progress-fill" data-width="100%" style="width: 0%;">
+                                    <div class="hiw-progress-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hiw-progress-row">
+                            <div class="hiw-progress-label">AI Videos</div>
+                            <div class="hiw-progress-track">
+                                <div class="hiw-progress-fill" data-width="85%" style="width: 0%;">
+                                    <div class="hiw-progress-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hiw-progress-row">
+                            <div class="hiw-progress-label">Posting Schedule</div>
+                            <div class="hiw-progress-track">
+                                <div class="hiw-progress-fill" data-width="70%" style="width: 0%;">
+                                    <div class="hiw-progress-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="hiw-card">
+                    <h3 class="hiw-card-title">You Grow on Autopilot</h3>
+                    <p class="hiw-card-desc">20 professional videos posted to Instagram, YouTube Shorts and LinkedIn every month. Watch your followers, authority and patient enquiries grow.</p>
+                    <div class="hiw-card-visual hiw-visual-chart">
+                        <svg width="100%" height="100%" viewBox="0 0 200 100" preserveAspectRatio="none" class="hiw-chart-svg">
+                            <defs>
+                                <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.5" />
+                                    <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+                                </linearGradient>
+                                <clipPath id="chartClip">
+                                    <rect id="hiw-chart-rect" x="0" y="0" width="0" height="100" />
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#chartClip)">
+                                <path d="M0,90 Q50,90 100,70 T200,20 L200,100 L0,100 Z" fill="url(#chartGradient)" />
+                                <path d="M0,90 Q50,90 100,70 T200,20" fill="none" stroke="#a78bfa" stroke-width="2" style="filter: drop-shadow(0 0 4px #7c3aed);" />
+                                <circle cx="200" cy="20" r="3" fill="#fff" style="filter: drop-shadow(0 0 4px #fff);" />
+                            </g>
+                        </svg>
+                        <div class="hiw-chart-labels">
+                            <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scrolling Tags Bar -->
+            <div class="hiw-tags-bar">
+                <div class="hiw-tags-track">
+                    <!-- Set 1 -->
+                    <div class="hiw-tag">AI AVATAR</div><span class="hiw-tag-sep">✦</span>
+                    <div class="hiw-tag">VOICE CLONING</div><span class="hiw-tag-sep">✦</span>
+                    <div class="hiw-tag">CONTENT STRATEGY</div><span class="hiw-tag-sep">✦</span>
+                    <div class="hiw-tag">SOCIAL MEDIA</div><span class="hiw-tag-sep">✦</span>
+                    <div class="hiw-tag">PERSONAL BRANDING</div><span class="hiw-tag-sep">✦</span>
+                    <div class="hiw-tag">REELS</div><span class="hiw-tag-sep">✦</span>
+                    <div class="hiw-tag">SCRIPTS</div><span class="hiw-tag-sep">✦</span>
+                    <div class="hiw-tag">AUTO POSTING</div><span class="hiw-tag-sep">✦</span>
+                    <!-- Set 2 -->
+                    <div class="hiw-tag">AI AVATAR</div><span class="hiw-tag-sep">✦</span>
+                    <div class="hiw-tag">VOICE CLONING</div><span class="hiw-tag-sep">✦</span>
+                    <div class="hiw-tag">CONTENT STRATEGY</div><span class="hiw-tag-sep">✦</span>
+                    <div class="hiw-tag">SOCIAL MEDIA</div><span class="hiw-tag-sep">✦</span>
+                    <div class="hiw-tag">PERSONAL BRANDING</div><span class="hiw-tag-sep">✦</span>
+                    <div class="hiw-tag">REELS</div><span class="hiw-tag-sep">✦</span>
+                    <div class="hiw-tag">SCRIPTS</div><span class="hiw-tag-sep">✦</span>
+                    <div class="hiw-tag">AUTO POSTING</div><span class="hiw-tag-sep">✦</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process Section -->
+    <section class="our-process">
+        <div class="process-container">
+            <!-- Left Column -->
+            <div class="process-left">
+                <div class="process-badge">✦ Our Process</div>
+                <h2 class="process-headline">From First Call to<br><span class="gradient-text">Viral</span> Medical Content.</h2>
+                <div class="process-nav">
+                    <button class="nav-prev" aria-label="Previous step">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button class="nav-next" aria-label="Next step">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Column (Carousel) -->
+            <div class="process-right">
+                <div class="process-carousel">
+                    <!-- Card 1 -->
+                    <div class="process-card">
+                        <div class="card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </div>
+                        <h3 class="card-title">Discovery Call</h3>
+                        <p class="card-desc">We start with a 30-minute strategy call to understand your speciality, target patients, clinic goals, and the kind of doctor you want to be known as online.</p>
+                        <div class="card-bottom">
+                            <span class="step-badge">STEP 01</span>
+                            <div class="step-number">01<span class="step-total">/06</span></div>
+                        </div>
+                        <div class="card-gradient-overlay"></div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="process-card">
+                        <div class="card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        </div>
+                        <h3 class="card-title">Competitor Research</h3>
+                        <p class="card-desc">We study the top doctors in your speciality and city — what they post, what performs, what's missing. We find the gap where your brand can dominate.</p>
+                        <div class="card-bottom">
+                            <span class="step-badge">STEP 02</span>
+                            <div class="step-number">02<span class="step-total">/06</span></div>
+                        </div>
+                        <div class="card-gradient-overlay"></div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="process-card">
+                        <div class="card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                        </div>
+                        <h3 class="card-title">Niche Content Analysis</h3>
+                        <p class="card-desc">We identify the highest performing content formats, hooks and topics in your medical niche — so every video we make is built to stop the scroll and build trust.</p>
+                        <div class="card-bottom">
+                            <span class="step-badge">STEP 03</span>
+                            <div class="step-number">03<span class="step-total">/06</span></div>
+                        </div>
+                        <div class="card-gradient-overlay"></div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="process-card">
+                        <div class="card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                        </div>
+                        <h3 class="card-title">Script Curation & Approval</h3>
+                        <p class="card-desc">Based on everything we learn about you — your goals, your patients, your expertise — we curate scripts tailored to your brand. We discuss every script with you before production.</p>
+                        <div class="card-bottom">
+                            <span class="step-badge">STEP 04</span>
+                            <div class="step-number">04<span class="step-total">/06</span></div>
+                        </div>
+                        <div class="card-gradient-overlay"></div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="process-card">
+                        <div class="card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        </div>
+                        <h3 class="card-title">Content Production</h3>
+                        <p class="card-desc">Your approved scripts come to life using your AI avatar — your face, your voice, your style. We produce reels, shorts, carousels and graphics ready for every platform.</p>
+                        <div class="card-bottom">
+                            <span class="step-badge">STEP 05</span>
+                            <div class="step-number">05<span class="step-total">/06</span></div>
+                        </div>
+                        <div class="card-gradient-overlay"></div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="process-card">
+                        <div class="card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"></path><path d="M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
+                        </div>
+                        <h3 class="card-title">Posted Across All Platforms</h3>
+                        <p class="card-desc">We publish your content across Instagram, YouTube Shorts, LinkedIn and Facebook at peak engagement times — with captions, hashtags and platform-native formatting.</p>
+                        <div class="card-bottom">
+                            <span class="step-badge">STEP 06</span>
+                            <div class="step-number">06<span class="step-total">/06</span></div>
+                        </div>
+                        <div class="card-gradient-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Row -->
+    <section class="cta-row-section">
+        <div class="cta-row-container">
+            <a href="[PASTE YOUR CALENDLY LINK HERE]" target="_blank" class="cta-pill-btn">
+                Book a Free Strategy Call
+                <span class="cta-pill-icon">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sample Videos Section -->
+    <section class="sample-videos-section">
+        <div class="sv-container">
+            <!-- Header -->
+            <div class="sv-header">
+                <div class="sv-badge">✦ Real Results</div>
+                <h2 class="sv-headline">See It To<br><span class="sv-text-gradient">Believe It.</span></h2>
+                <p class="sv-subtitle">Real AI avatar videos created for healthcare professionals — just like you.</p>
+            </div>
+
+            <!-- Horizontal Strip -->
+            <div class="sv-strip-wrapper">
+                <div class="sv-fade-left"></div>
+                <div class="sv-fade-right"></div>
+                <div class="sv-strip-track">
+                    <div class="sv-card" data-video-src="assets/GFC.mp4">
+                        <video class="sv-video" src="assets/GFC.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                        <div class="sv-bottom-overlay">
+                            <div class="sv-speciality">Hair Specialist</div>
+                            <div class="sv-topic">GFC Treatment For Hair Loss</div>
+                        </div>
+                    </div>
+                    <div class="sv-card" data-video-src="assets/IVF Video v1.mp4">
+                        <video class="sv-video" src="assets/IVF Video v1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                        <div class="sv-bottom-overlay">
+                            <div class="sv-speciality">IVF Specialist</div>
+                            <div class="sv-topic">Everything You Need To Know About IVF</div>
+                        </div>
+                    </div>
+                    <div class="sv-card" data-video-src="assets/Spiritual Homeopathy.mp4">
+                        <video class="sv-video" src="assets/Spiritual Homeopathy.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                        <div class="sv-bottom-overlay">
+                            <div class="sv-speciality">Homeopathy Doctor</div>
+                            <div class="sv-topic">How Homeopathy Can Transform Your Health</div>
+                        </div>
+                    </div>
+                    <div class="sv-card" data-video-src="assets/Triloma Laser Hair Reduction v1.mp4">
+                        <video class="sv-video" src="assets/Triloma Laser Hair Reduction v1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                        <div class="sv-bottom-overlay">
+                            <div class="sv-speciality">Dermatologist</div>
+                            <div class="sv-topic">Laser Hair Reduction Explained</div>
+                        </div>
+                    </div>
+                    <div class="sv-card" data-video-src="assets/toe exercise.mp4">
+                        <video class="sv-video" src="assets/toe exercise.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                        <div class="sv-bottom-overlay">
+                            <div class="sv-speciality">Physiotherapist</div>
+                            <div class="sv-topic">Toe Control Exercise For Better Mobility</div>
+                        </div>
+                    </div>
+                    <div class="sv-card" data-video-src="assets/aquatic knee.mp4">
+                        <video class="sv-video" src="assets/aquatic knee.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                        <div class="sv-bottom-overlay">
+                            <div class="sv-speciality">Physiotherapist</div>
+                            <div class="sv-topic">Aquatic Knee Exercises For Recovery</div>
+                        </div>
+                    </div>
+                    <div class="sv-card" data-video-src="assets/GFC.mp4">
+                        <video class="sv-video" src="assets/GFC.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                        <div class="sv-bottom-overlay">
+                            <div class="sv-speciality">Hair Specialist</div>
+                            <div class="sv-topic">GFC Treatment For Hair Loss</div>
+                        </div>
+                    </div>
+                    <div class="sv-card" data-video-src="assets/IVF Video v1.mp4">
+                        <video class="sv-video" src="assets/IVF Video v1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                        <div class="sv-bottom-overlay">
+                            <div class="sv-speciality">IVF Specialist</div>
+                            <div class="sv-topic">Everything You Need To Know About IVF</div>
+                        </div>
+                    </div>
+                    <div class="sv-card" data-video-src="assets/Spiritual Homeopathy.mp4">
+                        <video class="sv-video" src="assets/Spiritual Homeopathy.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                        <div class="sv-bottom-overlay">
+                            <div class="sv-speciality">Homeopathy Doctor</div>
+                            <div class="sv-topic">How Homeopathy Can Transform Your Health</div>
+                        </div>
+                    </div>
+                    <div class="sv-card" data-video-src="assets/Triloma Laser Hair Reduction v1.mp4">
+                        <video class="sv-video" src="assets/Triloma Laser Hair Reduction v1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                        <div class="sv-bottom-overlay">
+                            <div class="sv-speciality">Dermatologist</div>
+                            <div class="sv-topic">Laser Hair Reduction Explained</div>
+                        </div>
+                    </div>
+                    <div class="sv-card" data-video-src="assets/toe exercise.mp4">
+                        <video class="sv-video" src="assets/toe exercise.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                        <div class="sv-bottom-overlay">
+                            <div class="sv-speciality">Physiotherapist</div>
+                            <div class="sv-topic">Toe Control Exercise For Better Mobility</div>
+                        </div>
+                    </div>
+                    <div class="sv-card" data-video-src="assets/aquatic knee.mp4">
+                        <video class="sv-video" src="assets/aquatic knee.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                        <div class="sv-bottom-overlay">
+                            <div class="sv-speciality">Physiotherapist</div>
+                            <div class="sv-topic">Aquatic Knee Exercises For Recovery</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="/videos" class="sv-cta-btn">Explore All Videos →</a>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="sv-modal" id="svModal">
+        <div class="sv-modal-close" id="svModalClose">✕</div>
+        <div class="sv-modal-content">
+            <div class="sv-placeholder-video">Video coming soon</div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="wcu-container">
+            <h2 class="wcu-headline">Why Choose Solve AI</h2>
+            <p class="wcu-subtitle">Everything you need to grow your personal brand — without lifting a finger.</p>
+            
+            <div class="wcu-grid">
+                <!-- Card 1: Results Over Promises -->
+                <div class="wcu-card">
+                    <div class="wcu-visual wcu-visual-results">
+                        <div class="wcu-progress-item">
+                            <div class="wcu-progress-header">
+                                <span class="wcu-progress-label">Reach</span>
+                                <span class="wcu-progress-percent">88%</span>
+                            </div>
+                            <div class="wcu-progress-track">
+                                <div class="wcu-progress-fill" style="width: 88%;">
+                                    <div class="wcu-progress-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wcu-progress-item">
+                            <div class="wcu-progress-header">
+                                <span class="wcu-progress-label">Engagement</span>
+                                <span class="wcu-progress-percent">75%</span>
+                            </div>
+                            <div class="wcu-progress-track">
+                                <div class="wcu-progress-fill" style="width: 75%;">
+                                    <div class="wcu-progress-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wcu-progress-item">
+                            <div class="wcu-progress-header">
+                                <span class="wcu-progress-label">Patient Enquiries</span>
+                                <span class="wcu-progress-percent">92%</span>
+                            </div>
+                            <div class="wcu-progress-track">
+                                <div class="wcu-progress-fill" style="width: 92%;">
+                                    <div class="wcu-progress-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wcu-progress-item">
+                            <div class="wcu-progress-header">
+                                <span class="wcu-progress-label">Profile Visits</span>
+                                <span class="wcu-progress-percent">68%</span>
+                            </div>
+                            <div class="wcu-progress-track">
+                                <div class="wcu-progress-fill" style="width: 68%;">
+                                    <div class="wcu-progress-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="wcu-card-title">Results Over Promises</h3>
+                    <p class="wcu-card-desc">We don't just deliver videos — we track what's working, double down on winning content, and constantly refine your strategy based on real performance data.</p>
+                </div>
+
+                <!-- Card 2: Everything Done For You -->
+                <div class="wcu-card">
+                    <div class="wcu-visual wcu-visual-dfy">
+                        <div class="wcu-dfy-item">
+                            <div class="wcu-dfy-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="url(#checkGradient)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <span class="wcu-dfy-label">Scripts</span>
+                        </div>
+                        <div class="wcu-dfy-item">
+                            <div class="wcu-dfy-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="url(#checkGradient)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <span class="wcu-dfy-label">Videos</span>
+                        </div>
+                        <div class="wcu-dfy-item">
+                            <div class="wcu-dfy-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="url(#checkGradient)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <span class="wcu-dfy-label">Posted</span>
+                        </div>
+                        <svg width="0" height="0">
+                            <defs>
+                                <linearGradient id="checkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#7c3aed" />
+                                    <stop offset="100%" stop-color="#3b82f6" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="wcu-card-title">Everything Done For You</h3>
+                    <p class="wcu-card-desc">Scripts, avatars, editing, captions, hashtags, posting — we handle 100% of the work. You focus on your patients. We handle your entire online presence.</p>
+                </div>
+
+                <!-- Card 3: Built Exclusively for Doctors -->
+                <div class="wcu-card">
+                    <div class="wcu-visual wcu-visual-shield">
+                        <div class="wcu-shield">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                        </div>
+                    </div>
+                    <h3 class="wcu-card-title">Built Exclusively for Doctors</h3>
+                    <p class="wcu-card-desc">We don't work with everyone. Our entire system — content strategy, scripts, avatars — is built specifically for healthcare professionals. We understand your world.</p>
+                </div>
+
+                <!-- Card 4: Your Face. Your Voice. Your Brand. -->
+                <div class="wcu-card">
+                    <div class="wcu-visual wcu-visual-brand">
+                        <div class="wcu-brand-left">
+                            <div class="wcu-avatar"></div>
+                            <div class="wcu-line-long"></div>
+                            <div class="wcu-line-long"></div>
+                            <div class="wcu-line-short"></div>
+                        </div>
+                        <div class="wcu-brand-right">
+                            <div class="wcu-line-long"></div>
+                            <div class="wcu-line-long"></div>
+                            <div class="wcu-line-short"></div>
+                            <div class="wcu-brand-check">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="wcu-card-title">Your Face. Your Voice. Your Brand.</h3>
+                    <p class="wcu-card-desc">Every piece of content looks and sounds exactly like you. Your AI avatar carries your personality, expertise and tone — so your audience always feels they're hearing from the real you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get Section (Replaces Benefits Section) -->
+    <section class="what-you-get">
+        <div class="wyg-container">
+            <div class="wyg-header">
+                <div class="wyg-badge">✦ What You Get</div>
+                <h2 class="wyg-headline">Everything Your Brand<br><span class="gradient-text">Needs. Nothing It Doesn't.</span></h2>
+                <p class="wyg-subtitle">One monthly retainer. Zero hassle. Complete personal brand management — built for busy doctors.</p>
+            </div>
+            
+            <div class="wyg-diagram">
+                <!-- SVG Connecting Lines -->
+                <svg class="wyg-lines-svg" width="900" height="680" viewBox="0 0 900 680" fill="none" preserveAspectRatio="none">
+                    <!-- Left Lines -->
+                    <path class="wyg-line wyg-line-l1" d="M370 340 C320 340, 320 80, 280 80" />
+                    <path class="wyg-line wyg-line-l2" d="M370 340 L280 340" />
+                    <path class="wyg-line wyg-line-l3" d="M370 340 C320 340, 320 600, 280 600" />
+                    <!-- Right Lines -->
+                    <path class="wyg-line wyg-line-r1" d="M530 340 C580 340, 580 80, 620 80" />
+                    <path class="wyg-line wyg-line-r2" d="M530 340 L620 340" />
+                    <path class="wyg-line wyg-line-r3" d="M530 340 C580 340, 580 600, 620 600" />
+                </svg>
+
+                <div class="wyg-center-element">
+                    <div class="wyg-center-glow"></div>
+                    <div class="wyg-center-inner">
+                        <span class="wyg-center-spark">✦</span>
+                        <span class="wyg-center-text">Solve AI</span>
+                    </div>
+                </div>
+
+                <!-- Left Side Cards -->
+                <div class="wyg-card wyg-card-l1">
+                    <div class="wyg-icon-container">
+                        <div class="wyg-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></div>
+                    </div>
+                    <div class="wyg-content">
+                        <h3 class="wyg-title">AI Avatar Creation</h3>
+                        <p class="wyg-desc">We clone your face and voice once. Your digital twin handles every video — no studio, no camera, no retakes.</p>
+                    </div>
+                </div>
+
+                <div class="wyg-card wyg-card-l2">
+                    <div class="wyg-icon-container">
+                        <div class="wyg-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+                    </div>
+                    <div class="wyg-content">
+                        <h3 class="wyg-title">Done-For-You Scripts</h3>
+                        <p class="wyg-desc">Every script is curated, discussed and approved by you before production. No guesswork — just content your patients want to watch.</p>
+                    </div>
+                </div>
+
+                <div class="wyg-card wyg-card-l3">
+                    <div class="wyg-icon-container">
+                        <div class="wyg-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+                    </div>
+                    <div class="wyg-content">
+                        <h3 class="wyg-title">20 Videos Every Month</h3>
+                        <p class="wyg-desc">Reels, Shorts, talking head videos — produced and delivered every single month like clockwork. Your content calendar is always full.</p>
+                    </div>
+                </div>
+
+                <!-- Right Side Cards -->
+                <div class="wyg-card wyg-card-r1">
+                    <div class="wyg-icon-container">
+                        <div class="wyg-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></div>
+                    </div>
+                    <div class="wyg-content">
+                        <h3 class="wyg-title">Multi-Platform Posting</h3>
+                        <p class="wyg-desc">We post across Instagram, YouTube Shorts, LinkedIn and Facebook at peak times — with platform-native captions, hashtags and formatting.</p>
+                    </div>
+                </div>
+
+                <div class="wyg-card wyg-card-r2">
+                    <div class="wyg-icon-container">
+                        <div class="wyg-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+                    </div>
+                    <div class="wyg-content">
+                        <h3 class="wyg-title">Monthly Performance Report</h3>
+                        <p class="wyg-desc">Every month you get a clear report — what performed, what grew, what we're doubling down on. Full transparency, always.</p>
+                    </div>
+                </div>
+
+                <div class="wyg-card wyg-card-r3">
+                    <div class="wyg-icon-container">
+                        <div class="wyg-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+                    </div>
+                    <div class="wyg-content">
+                        <h3 class="wyg-title">Personal Brand Strategy</h3>
+                        <p class="wyg-desc">We build a long-term authority strategy — so your name becomes the first one patients think of in your city.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Banner Section -->
+    <section class="final-cta-section">
+        <div class="final-cta-container">
+            <!-- Background Grid and Glow Pseudo Elements / Divs -->
+            <div class="final-cta-glow"></div>
+            
+            <!-- Content -->
+            <div class="final-cta-content">
+                <div class="final-cta-badge">✦ Start Today</div>
+                <h2 class="final-cta-headline">Your Patients Are Searching.<br><span class="final-cta-headline-sub">Make Sure They Find You.</span></h2>
+                
+                <div class="final-cta-buttons">
+                    <a href="[PASTE YOUR CALENDLY LINK HERE]" target="_blank" class="final-cta-btn-primary">
+                        Book a Free Call &rarr;
+                        <span class="final-cta-icon-primary">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </span>
+                    </a>
+                    <a href="#" class="final-cta-btn-secondary">
+                        See Sample Videos &rarr;
+                        <span class="final-cta-icon-secondary">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="faq-header">
+                <div class="faq-badge">✦ FAQs</div>
+                <h2 class="faq-headline">Frequently Asked<br>Questions</h2>
+            </div>
+            
+            <div class="faq-list">
+                <!-- Item 1 -->
+                <div class="faq-item open">
+                    <div class="faq-question-row">
+                        <h3 class="faq-question">What exactly is an AI avatar?</h3>
+                        <div class="faq-toggle">
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq-answer-wrapper">
+                        <p class="faq-answer">An AI avatar is a hyper-realistic digital version of you — your face, your voice, your expressions. Once we create it, it can deliver any video script without you ever sitting in front of a camera again. Your patients won't be able to tell the difference.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-question-row">
+                        <h3 class="faq-question">Which tools do you use to create my avatar and videos?</h3>
+                        <div class="faq-toggle">
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq-answer-wrapper">
+                        <p class="faq-answer">We use a combination of the latest AI video generation tools including Kling AI, Google Veo 3, and other cutting-edge platforms depending on what produces the best quality output for your specific avatar. We don't lock ourselves into one tool — we use whatever gives you the most realistic and professional result.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="faq-item">
+                    <div class="faq-question-row">
+                        <h3 class="faq-question">How do you write my scripts?</h3>
+                        <div class="faq-toggle">
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq-answer-wrapper">
+                        <p class="faq-answer">We don't guess. First we study your competitors, analyse the highest performing content in your medical niche, and understand your goals and target patients. Then we curate scripts specifically for you. Every script is shared with you for review and discussion — we only move to production once you are 100% happy with it. You can also share scripts or references you like and we build around them.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-question-row">
+                        <h3 class="faq-question">Do I need to record myself every month?</h3>
+                        <div class="faq-toggle">
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq-answer-wrapper">
+                        <p class="faq-answer">No. You record once during onboarding — a simple 15-minute session. That's it. After that your AI avatar handles every single video. You never need to sit in front of a camera again.</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="faq-item">
+                    <div class="faq-question-row">
+                        <h3 class="faq-question">Will my patients know it's an AI avatar?</h3>
+                        <div class="faq-toggle">
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq-answer-wrapper">
+                        <p class="faq-answer">The quality of today's AI avatars is incredibly realistic. Most viewers cannot tell the difference. That said, we always recommend being authentic with your audience if asked — it actually builds more trust when doctors are transparent about using smart technology to share their expertise at scale.</p>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="faq-item">
+                    <div class="faq-question-row">
+                        <h3 class="faq-question">How long does it take to get started?</h3>
+                        <div class="faq-toggle">
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq-answer-wrapper">
+                        <p class="faq-answer">From your first call to your first video going live is typically 10 to 14 days. Week one is discovery, competitor research, avatar creation and script curation. Week two is production and approval. From month two onwards everything runs like clockwork every month.</p>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="faq-item">
+                    <div class="faq-question-row">
+                        <h3 class="faq-question">Which platforms do you post on?</h3>
+                        <div class="faq-toggle">
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq-answer-wrapper">
+                        <p class="faq-answer">We post across Instagram Reels, YouTube Shorts, LinkedIn and Facebook. Every video is formatted natively for each platform — correct aspect ratio, captions, hashtags and posting time optimised for maximum reach.</p>
+                    </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="faq-item">
+                    <div class="faq-question-row">
+                        <h3 class="faq-question">How many videos do I get every month?</h3>
+                        <div class="faq-toggle">
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq-answer-wrapper">
+                        <p class="faq-answer">Our standard package includes 20 videos every month. This covers Reels, Shorts and talking head content across all platforms. Custom packages with higher volumes are also available depending on your goals.</p>
+                    </div>
+                </div>
+
+                <!-- Item 9 -->
+                <div class="faq-item">
+                    <div class="faq-question-row">
+                        <h3 class="faq-question">What kind of doctors do you work with?</h3>
+                        <div class="faq-toggle">
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq-answer-wrapper">
+                        <p class="faq-answer">We work exclusively with healthcare professionals — dermatologists, dentists, surgeons, gynaecologists, orthopaedic doctors, ayurveda practitioners, clinic owners and more. If you are a doctor who wants to build a personal brand online, we are built for you.</p>
+                    </div>
+                </div>
+
+                <!-- Item 10 -->
+                <div class="faq-item">
+                    <div class="faq-question-row">
+                        <h3 class="faq-question">What if I don't like the content?</h3>
+                        <div class="faq-toggle">
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq-answer-wrapper">
+                        <p class="faq-answer">Nothing goes live without your approval. Every script is discussed with you first. If you ever feel a video doesn't represent you well we revise it — no questions asked. Your brand is our responsibility.</p>
+                    </div>
+                </div>
+
+                <!-- Item 11 -->
+                <div class="faq-item">
+                    <div class="faq-question-row">
+                        <h3 class="faq-question">Is there a lock-in contract?</h3>
+                        <div class="faq-toggle">
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq-answer-wrapper">
+                        <p class="faq-answer">We work on a monthly retainer with no long-term lock-in contracts. We believe our results should be the reason you stay — not a contract.</p>
+                    </div>
+                </div>
+
+                <!-- Item 12 -->
+                <div class="faq-item">
+                    <div class="faq-question-row">
+                        <h3 class="faq-question">How is Solve AI different from hiring a social media manager?</h3>
+                        <div class="faq-toggle">
+                            <span class="faq-toggle-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq-answer-wrapper">
+                        <p class="faq-answer">A social media manager posts content. We build your entire personal brand system — AI avatar, content strategy, competitor research, script curation, video production and posting — all in one. And because we use AI, you get 20 professional videos a month at a fraction of the cost of a traditional content team.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <canvas id="footer-particles" class="footer-particles"></canvas>
+        <div class="footer-bg-text">Solve AI</div>
+        
+        <div class="footer-main-content">
+            <div class="footer-logo-icon">✦</div>
+            <p class="footer-tagline">Get connected with Solve AI on social</p>
+            <p class="footer-subtitle">Built for doctors. Powered by AI.</p>
+            
+            <div class="footer-social-row">
+                <a href="#" class="footer-social-btn">
+                    Instagram
+                    <span class="footer-social-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </span>
+                </a>
+                <a href="#" class="footer-social-btn">
+                    YouTube
+                    <span class="footer-social-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                    </span>
+                </a>
+                <a href="#" class="footer-social-btn">
+                    LinkedIn
+                    <span class="footer-social-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </span>
+                </a>
+                <a href="#" class="footer-social-btn">
+                    Facebook
+                    <span class="footer-social-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </span>
+                </a>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom-bar">
+                <div class="footer-nav">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Results</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer-copyright">
+                    © 2026 Solve AI. All Rights Reserved.
+                </div>
+                <div class="footer-back-to-top">
+                    <button id="backToTopBtn" class="back-to-top-btn">Back to top &uarr;</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
