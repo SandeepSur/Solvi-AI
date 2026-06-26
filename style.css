@@ -3181,14 +3181,18 @@ a {
 
 /* --- Logo Updates --- */
 .nav-logo-img {
-    height: 48px;
-    width: auto;
+    width: 160px;
+    height: 60px;
     object-fit: contain;
     display: block;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.15));
+    max-width: none;
+    max-height: none;
 }
 @media (max-width: 768px) {
     .nav-logo-img {
-        height: 38px;
+        width: 120px;
+        height: 45px;
     }
 }
 .footer-logo-img {
@@ -3197,4 +3201,5 @@ a {
     object-fit: contain;
     display: block;
     margin: 0 auto 24px auto;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.15));
 }
