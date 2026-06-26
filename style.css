@@ -3181,18 +3181,18 @@ a {
 
 /* --- Logo Updates --- */
 .nav-logo-img {
-    height: 36px;
+    height: 48px;
     width: auto;
     object-fit: contain;
     display: block;
 }
 @media (max-width: 768px) {
     .nav-logo-img {
-        height: 30px;
+        height: 38px;
     }
 }
 .footer-logo-img {
-    width: 120px;
+    width: 160px;
     height: auto;
     object-fit: contain;
     display: block;
