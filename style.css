@@ -3195,11 +3195,20 @@ a {
         height: 45px;
     }
 }
+.footer-logo-container {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 12px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px auto;
+}
 .footer-logo-img {
-    width: 160px;
+    width: 200px;
     height: auto;
     object-fit: contain;
     display: block;
-    margin: 0 auto 24px auto;
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.15));
+    filter: none;
+    margin: 0;
 }
